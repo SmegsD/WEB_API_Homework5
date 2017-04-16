@@ -1,0 +1,187 @@
+swagger: "2.0"
+info:
+  version: "0.0.1"
+  title: Movies DB
+# during dev, should point to your local machine
+host: localhost:10010
+# basePath prefixes all resource paths
+basePath: /
+#
+schemes:
+  # tip: remove http to make production-grade
+  - http
+  - https
+# format of bodies a client can send (Content-Type)
+consumes:
+  - application/json
+# format of the responses to the client (Accepts)
+produces:
+  - application/json
+paths:
+  /movies:
+    # binds a127 app logic to a route
+    x-swagger-router-controller: movies
+    get:
+      description: Returns all movies in database
+      # used as the method name of the controller
+      operationId: getMovies
+      responses:
+        "200":
+          description: Success
+          schema:
+            $ref: "#/definitions/MovieList"
+        # responses may fall through to errors
+        default:
+          description: Error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+
+    post:
+      description: Creates a new movie entry
+      operationId: createMovie
+      parameters:
+        - name: movie
+          in: body
+          required: true
+          description: a new movie details
+          schema:
+            $ref: "#/definitions/MovieBody"
+      responses:
+        "200":
+          description: a successful movie stored
+          schema:
+            $ref: "#/definitions/MovieBody"
+        default:
+          description: error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+
+  /movie/{movieId}:
+    x-swagger-router-controller: movies
+    get:
+      description: Returns a single movie entry
+      operationId: returnMovie
+      parameters:
+        - name: movieId
+          required: true
+          in: path
+          type: string
+      responses:
+        "200":
+          description: a movie details
+          schema:
+            $ref: "#/definitions/MovieBody"
+        default:
+          description: error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+    put:
+      description: Update a signle movie entry by Id
+      operationId: movieUpdate
+      parameters:
+        - name: movieId
+          required: true
+          in: path
+          type: string
+        - name: movie
+          required: true
+          in: body
+          description: an updated movie details
+          schema:
+            $ref: "#/definitions/MovieBody"
+      responses:
+        "200":
+          description: successfully updating a movie
+          schema:
+            $ref: "#/definitions/MovieBody"
+        default:
+          description: error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+    delete:
+      description: Delete a movie entry
+      operationId: movieDelete
+      parameters:
+        - name: movieId
+          required: true
+          in: path
+          type: string
+      responses:
+        "200":
+          description: deleted a movie details
+          schema:
+            $ref: "#/definitions/MovieBody"
+        default:
+          description: error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
+
+  /swagger:
+    x-swagger-pipe: swagger_raw
+# complex objects have schema definitions
+definitions:
+
+#responding with a list of movies
+  MovieList:
+    properties:
+      movie:
+        type: array
+        items:
+          $ref: "#/definitions/Movie"
+
+#Post/Put/Delete a Movie
+  MovieBody:
+    properties:
+      uuid:
+        type: string
+      type:
+        type: string
+      created:
+        type: integer
+      modified:
+        type: integer
+      metadata:
+        properties:
+          path:
+            type: string
+          size:
+            type: integer
+      movies:
+        $ref: "#/definitions/Movie"
+#error response
+  ErrorResponse:
+    required:
+      - message
+    properties:
+      message:
+        type: string
+
+ #movie object
+  Movie:
+    required:
+      - name
+      - year
+      - actors
+    properties:
+      ID:
+        type: integer
+      actors:
+        type: array
+        items:
+          $ref: "#/definitions/Actor"
+      year:
+        type: integer
+        minimum: 1
+      name:
+        type: string
+  Actor:
+    required:
+      - firstName
+      - lastName
+    properties:
+      firstName:
+        type: string
+      lastName:
+        type: string
+      age:
+        type: integer
