@@ -1,0 +1,613 @@
+{
+	"id": "9079d2bf-abbf-4263-0289-f2a29516cb3a",
+	"name": "Homework 5 (new stuff)",
+	"description": "new homework 5 ",
+	"order": [
+		"aa017082-2b2c-8280-3121-2a3ae9c205ac",
+		"1e451b94-e6f0-9699-b8eb-61138554c74f",
+		"33506fce-f9d6-e07d-4eae-842b9f880e50",
+		"c4aa214b-0e27-2c9a-bab6-a9f94a8bfa07",
+		"4bb22af1-471d-733b-3025-45c7534f3899"
+	],
+	"folders": [],
+	"timestamp": 1492620997017,
+	"owner": "1525971",
+	"public": false,
+	"requests": [
+		{
+			"id": "1e451b94-e6f0-9699-b8eb-61138554c74f",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://drews122002-test.apigee.net/API_Homework5/movie/81bc4d3-1d7a-11e7-990c-0eec2415f3df\n",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "9079d2bf-abbf-4263-0289-f2a29516cb3a",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://drews122002-test.apigee.net/API_Homework5/movie/81cbc4d3-1d7a-11e7-990c-0eec2415f3df\n",
+			"description": "invalid request without review querery parameter ",
+			"descriptionFormat": "html",
+			"time": 1492621097157,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 354,
+					"headers": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "200",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Apr 2017 16:57:59 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"c8-LA5hfjhCfX6pquYOeyMjJY6amvU\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "Server",
+							"value": "Apigee Router",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"error\":{\"name\":\"entity_not_found\",\"description\":\"Cannot find entity with name: 81bc4d3-1d7a-11e7-990c-0eec2415f3df\",\"exception\":\"org.apache.usergrid.persistence.exceptions.EntityNotFoundException\"}}",
+					"language": "json",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 200,
+						"header": 268
+					},
+					"mimeType": "text",
+					"fileName": "response.json",
+					"dataURI": "data:application/json;base64, eyJlcnJvciI6eyJuYW1lIjoiZW50aXR5X25vdF9mb3VuZCIsImRlc2NyaXB0aW9uIjoiQ2Fubm90IGZpbmQgZW50aXR5IHdpdGggbmFtZTogODFiYzRkMy0xZDdhLTExZTctOTkwYy0wZWVjMjQxNWYzZGYiLCJleGNlcHRpb24iOiJvcmcuYXBhY2hlLnVzZXJncmlkLnBlcnNpc3RlbmNlLmV4Y2VwdGlvbnMuRW50aXR5Tm90Rm91bmRFeGNlcHRpb24ifX0=",
+					"state": {
+						"size": "normal"
+					},
+					"id": "f7859d05-11c5-254f-b320-3f9dd86cf422",
+					"name": "invalid request without review parameter ",
+					"request": {
+						"url": "http://drews122002-test.apigee.net/API_Homework5/movie/81bc4d3-1d7a-11e7-990c-0eec2415f3df\n",
+						"headers": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"data": "",
+						"method": "GET",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": ""
+		},
+		{
+			"id": "33506fce-f9d6-e07d-4eae-842b9f880e50",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://drews122002-test.apigee.net/API_Homework5/movie/81cbc4d3-1d7a-11e7-990c-0eec2415f3df/",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "9079d2bf-abbf-4263-0289-f2a29516cb3a",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://drews122002-test.apigee.net/API_Homework5/movie/81cbc4d3-1d7a-11e7-990c-0eec2415f3df/",
+			"description": "Valid\tsave\treview\tmethod\tthat\tassociates\ta\treview\twith\ta\tmovie",
+			"descriptionFormat": "html",
+			"time": 1492621606816,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 892,
+					"headers": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "324",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Apr 2017 17:06:26 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"144-Sq1iAxVkVFZiZ4XnlxGFsyCRCJo\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "Server",
+							"value": "Apigee Router",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"message\":\"Review add successful\",\"review\":{\"uuid\":\"85b7084a-2522-11e7-9fee-0ad881f403bf\",\"type\":\"review\",\"created\":1492621586057,\"modified\":1492621586318,\"metadata\":{\"path\":\"/reviews/85b7084a-2522-11e7-9fee-0ad881f403bf\",\"size\":408},\"movie\":\"Dumb & Dumber\",\"review\":\"A hilarious flick!\",\"reviewer\":\"Taylor Bra\",\"score\":4}}",
+					"language": "json",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 324,
+						"header": 269
+					},
+					"mimeType": "text",
+					"fileName": "response.json",
+					"dataURI": "data:application/json;base64, eyJtZXNzYWdlIjoiUmV2aWV3IGFkZCBzdWNjZXNzZnVsIiwicmV2aWV3Ijp7InV1aWQiOiI4NWI3MDg0YS0yNTIyLTExZTctOWZlZS0wYWQ4ODFmNDAzYmYiLCJ0eXBlIjoicmV2aWV3IiwiY3JlYXRlZCI6MTQ5MjYyMTU4NjA1NywibW9kaWZpZWQiOjE0OTI2MjE1ODYzMTgsIm1ldGFkYXRhIjp7InBhdGgiOiIvcmV2aWV3cy84NWI3MDg0YS0yNTIyLTExZTctOWZlZS0wYWQ4ODFmNDAzYmYiLCJzaXplIjo0MDh9LCJtb3ZpZSI6IkR1bWIgJiBEdW1iZXIiLCJyZXZpZXciOiJBIGhpbGFyaW91cyBmbGljayEiLCJyZXZpZXdlciI6IlRheWxvciBCcmEiLCJzY29yZSI6NH19",
+					"state": {
+						"size": "normal"
+					},
+					"id": "f366c683-bf5c-762f-0937-563c178f1142",
+					"name": "adding a review",
+					"request": {
+						"url": "http://drews122002-test.apigee.net/API_Homework5/movie/81cbc4d3-1d7a-11e7-990c-0eec2415f3df/",
+						"headers": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"data": "{\"reviewer\": \"Taylor Bra\",\n\n\"review\": \"A hilarious flick!\",\n\n\n\"score\": 4}",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\"reviewer\": \"Taylor Bra\",\n\n\"review\": \"A hilarious flick!\",\n\n\n\"score\": 4}"
+		},
+		{
+			"id": "4bb22af1-471d-733b-3025-45c7534f3899",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://drews122002-test.apigee.net/API_Homework5/movie/81cbc4d3-1d7a-11e7-990c-0eec2415f3df/?reviews=true",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "9079d2bf-abbf-4263-0289-f2a29516cb3a",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://drews122002-test.apigee.net/API_Homework5/movie/81cbc4d3-1d7a-11e7-990c-0eec2415f3df/?reviews=true",
+			"description": "Valid\trequest\twith the\treview\tquery\tparameter.",
+			"descriptionFormat": "html",
+			"time": 1492624451776,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 458,
+					"headers": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "2395",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Apr 2017 17:53:57 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"95b-mHLlg/FykomFi57GfwMZQh/989A\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "Server",
+							"value": "Apigee Router",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"movie\":{\"statusCode\":200,\"body\":{\"action\":\"get\",\"application\":\"d64dae4f-1bf2-11e7-a2c2-122e0737977d\",\"params\":{},\"path\":\"/movies\",\"uri\":\"https://apibaas-trial.apigee.net/drews122002/sandbox/movies\",\"entities\":[{\"uuid\":\"81cbc4d3-1d7a-11e7-990c-0eec2415f3df\",\"type\":\"movie\",\"name\":\"Dumb & Dumber\",\"created\":1491779765892,\"modified\":1491779766136,\"actors\":[{\"firstName\":\"Jim\",\"lastName\":\"Carrey\",\"age\":34},{\"firstName\":\"Jeff\",\"lastName\":\"Daniels\",\"age\":27},{\"firstName\":\"Lauren\",\"lastName\":\"Holly\",\"age\":26}],\"ID\":1,\"metadata\":{\"path\":\"/movies/81cbc4d3-1d7a-11e7-990c-0eec2415f3df\",\"size\":872},\"year\":1994}],\"timestamp\":1492624437118,\"duration\":35,\"organization\":\"drews122002\",\"applicationName\":\"sandbox\"},\"headers\":{\"access-control-allow-origin\":\"*\",\"content-type\":\"application/json\",\"date\":\"Wed, 19 Apr 2017 17:53:57 GMT\",\"server\":\"Apache-Coyote/1.1\",\"set-cookie\":[\"rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Tue, 18-Apr-2017 17:53:57 GMT\"],\"content-length\":\"913\",\"connection\":\"keep-alive\"},\"request\":{\"uri\":{\"protocol\":\"https:\",\"slashes\":true,\"auth\":null,\"host\":\"apibaas-trial.apigee.net\",\"port\":443,\"hostname\":\"apibaas-trial.apigee.net\",\"hash\":null,\"search\":null,\"query\":null,\"pathname\":\"/drews122002/sandbox/movies/81cbc4d3-1d7a-11e7-990c-0eec2415f3df\",\"path\":\"/drews122002/sandbox/movies/81cbc4d3-1d7a-11e7-990c-0eec2415f3df\",\"href\":\"https://apibaas-trial.apigee.net/drews122002/sandbox/movies/81cbc4d3-1d7a-11e7-990c-0eec2415f3df\"},\"method\":\"GET\",\"headers\":{\"User-Agent\":\"usergrid-nodejs/v2.0.0-rc.2\",\"accept\":\"application/json\"}}},\"reviews\":[{\"uuid\":\"22f074fa-2529-11e7-a2c2-122e0737977d\",\"type\":\"review\",\"created\":1492624426816,\"modified\":1492624427039,\"metadata\":{\"path\":\"/reviews/22f074fa-2529-11e7-a2c2-122e0737977d\",\"size\":517},\"movie\":\"Dumb & Dumber\",\"review\":\"A hilarious flick!\",\"reviewer\":\"Taylor Bra\",\"score\":4},{\"uuid\":\"06c35234-2529-11e7-a2c2-122e0737977d\",\"type\":\"review\",\"created\":1492624379544,\"modified\":1492624379771,\"metadata\":{\"path\":\"/reviews/06c35234-2529-11e7-a2c2-122e0737977d\",\"size\":517},\"movie\":\"Dumb & Dumber\",\"review\":\"A hilarious flick!\",\"reviewer\":\"Taylor Bra\",\"score\":4},{\"uuid\":\"85b7084a-2522-11e7-9fee-0ad881f403bf\",\"type\":\"review\",\"created\":1492621586057,\"modified\":1492621586318,\"metadata\":{\"path\":\"/reviews/85b7084a-2522-11e7-9fee-0ad881f403bf\",\"size\":517},\"movie\":\"Dumb & Dumber\",\"review\":\"A hilarious flick!\",\"reviewer\":\"Taylor Bra\",\"score\":4}]}",
+					"language": "json",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 2395,
+						"header": 270
+					},
+					"mimeType": "text",
+					"fileName": "response.json",
+					"dataURI": "data:application/json;base64, eyJtb3ZpZSI6eyJzdGF0dXNDb2RlIjoyMDAsImJvZHkiOnsiYWN0aW9uIjoiZ2V0IiwiYXBwbGljYXRpb24iOiJkNjRkYWU0Zi0xYmYyLTExZTctYTJjMi0xMjJlMDczNzk3N2QiLCJwYXJhbXMiOnt9LCJwYXRoIjoiL21vdmllcyIsInVyaSI6Imh0dHBzOi8vYXBpYmFhcy10cmlhbC5hcGlnZWUubmV0L2RyZXdzMTIyMDAyL3NhbmRib3gvbW92aWVzIiwiZW50aXRpZXMiOlt7InV1aWQiOiI4MWNiYzRkMy0xZDdhLTExZTctOTkwYy0wZWVjMjQxNWYzZGYiLCJ0eXBlIjoibW92aWUiLCJuYW1lIjoiRHVtYiAmIER1bWJlciIsImNyZWF0ZWQiOjE0OTE3Nzk3NjU4OTIsIm1vZGlmaWVkIjoxNDkxNzc5NzY2MTM2LCJhY3RvcnMiOlt7ImZpcnN0TmFtZSI6IkppbSIsImxhc3ROYW1lIjoiQ2FycmV5IiwiYWdlIjozNH0seyJmaXJzdE5hbWUiOiJKZWZmIiwibGFzdE5hbWUiOiJEYW5pZWxzIiwiYWdlIjoyN30seyJmaXJzdE5hbWUiOiJMYXVyZW4iLCJsYXN0TmFtZSI6IkhvbGx5IiwiYWdlIjoyNn1dLCJJRCI6MSwibWV0YWRhdGEiOnsicGF0aCI6Ii9tb3ZpZXMvODFjYmM0ZDMtMWQ3YS0xMWU3LTk5MGMtMGVlYzI0MTVmM2RmIiwic2l6ZSI6ODcyfSwieWVhciI6MTk5NH1dLCJ0aW1lc3RhbXAiOjE0OTI2MjQ0MzcxMTgsImR1cmF0aW9uIjozNSwib3JnYW5pemF0aW9uIjoiZHJld3MxMjIwMDIiLCJhcHBsaWNhdGlvbk5hbWUiOiJzYW5kYm94In0sImhlYWRlcnMiOnsiYWNjZXNzLWNvbnRyb2wtYWxsb3ctb3JpZ2luIjoiKiIsImNvbnRlbnQtdHlwZSI6ImFwcGxpY2F0aW9uL2pzb24iLCJkYXRlIjoiV2VkLCAxOSBBcHIgMjAxNyAxNzo1Mzo1NyBHTVQiLCJzZXJ2ZXIiOiJBcGFjaGUtQ295b3RlLzEuMSIsInNldC1jb29raWUiOlsicmVtZW1iZXJNZT1kZWxldGVNZTsgUGF0aD0vOyBNYXgtQWdlPTA7IEV4cGlyZXM9VHVlLCAxOC1BcHItMjAxNyAxNzo1Mzo1NyBHTVQiXSwiY29udGVudC1sZW5ndGgiOiI5MTMiLCJjb25uZWN0aW9uIjoia2VlcC1hbGl2ZSJ9LCJyZXF1ZXN0Ijp7InVyaSI6eyJwcm90b2NvbCI6Imh0dHBzOiIsInNsYXNoZXMiOnRydWUsImF1dGgiOm51bGwsImhvc3QiOiJhcGliYWFzLXRyaWFsLmFwaWdlZS5uZXQiLCJwb3J0Ijo0NDMsImhvc3RuYW1lIjoiYXBpYmFhcy10cmlhbC5hcGlnZWUubmV0IiwiaGFzaCI6bnVsbCwic2VhcmNoIjpudWxsLCJxdWVyeSI6bnVsbCwicGF0aG5hbWUiOiIvZHJld3MxMjIwMDIvc2FuZGJveC9tb3ZpZXMvODFjYmM0ZDMtMWQ3YS0xMWU3LTk5MGMtMGVlYzI0MTVmM2RmIiwicGF0aCI6Ii9kcmV3czEyMjAwMi9zYW5kYm94L21vdmllcy84MWNiYzRkMy0xZDdhLTExZTctOTkwYy0wZWVjMjQxNWYzZGYiLCJocmVmIjoiaHR0cHM6Ly9hcGliYWFzLXRyaWFsLmFwaWdlZS5uZXQvZHJld3MxMjIwMDIvc2FuZGJveC9tb3ZpZXMvODFjYmM0ZDMtMWQ3YS0xMWU3LTk5MGMtMGVlYzI0MTVmM2RmIn0sIm1ldGhvZCI6IkdFVCIsImhlYWRlcnMiOnsiVXNlci1BZ2VudCI6InVzZXJncmlkLW5vZGVqcy92Mi4wLjAtcmMuMiIsImFjY2VwdCI6ImFwcGxpY2F0aW9uL2pzb24ifX19LCJyZXZpZXdzIjpbeyJ1dWlkIjoiMjJmMDc0ZmEtMjUyOS0xMWU3LWEyYzItMTIyZTA3Mzc5NzdkIiwidHlwZSI6InJldmlldyIsImNyZWF0ZWQiOjE0OTI2MjQ0MjY4MTYsIm1vZGlmaWVkIjoxNDkyNjI0NDI3MDM5LCJtZXRhZGF0YSI6eyJwYXRoIjoiL3Jldmlld3MvMjJmMDc0ZmEtMjUyOS0xMWU3LWEyYzItMTIyZTA3Mzc5NzdkIiwic2l6ZSI6NTE3fSwibW92aWUiOiJEdW1iICYgRHVtYmVyIiwicmV2aWV3IjoiQSBoaWxhcmlvdXMgZmxpY2shIiwicmV2aWV3ZXIiOiJUYXlsb3IgQnJhIiwic2NvcmUiOjR9LHsidXVpZCI6IjA2YzM1MjM0LTI1MjktMTFlNy1hMmMyLTEyMmUwNzM3OTc3ZCIsInR5cGUiOiJyZXZpZXciLCJjcmVhdGVkIjoxNDkyNjI0Mzc5NTQ0LCJtb2RpZmllZCI6MTQ5MjYyNDM3OTc3MSwibWV0YWRhdGEiOnsicGF0aCI6Ii9yZXZpZXdzLzA2YzM1MjM0LTI1MjktMTFlNy1hMmMyLTEyMmUwNzM3OTc3ZCIsInNpemUiOjUxN30sIm1vdmllIjoiRHVtYiAmIER1bWJlciIsInJldmlldyI6IkEgaGlsYXJpb3VzIGZsaWNrISIsInJldmlld2VyIjoiVGF5bG9yIEJyYSIsInNjb3JlIjo0fSx7InV1aWQiOiI4NWI3MDg0YS0yNTIyLTExZTctOWZlZS0wYWQ4ODFmNDAzYmYiLCJ0eXBlIjoicmV2aWV3IiwiY3JlYXRlZCI6MTQ5MjYyMTU4NjA1NywibW9kaWZpZWQiOjE0OTI2MjE1ODYzMTgsIm1ldGFkYXRhIjp7InBhdGgiOiIvcmV2aWV3cy84NWI3MDg0YS0yNTIyLTExZTctOWZlZS0wYWQ4ODFmNDAzYmYiLCJzaXplIjo1MTd9LCJtb3ZpZSI6IkR1bWIgJiBEdW1iZXIiLCJyZXZpZXciOiJBIGhpbGFyaW91cyBmbGljayEiLCJyZXZpZXdlciI6IlRheWxvciBCcmEiLCJzY29yZSI6NH1dfQ==",
+					"state": {
+						"size": "normal"
+					},
+					"id": "1e90c159-ea0d-4009-175f-3ff503c190e6",
+					"name": "Valid\trequest\twith the\treview\tquery\tparameter.",
+					"request": {
+						"url": "http://drews122002-test.apigee.net/API_Homework5/movie/81cbc4d3-1d7a-11e7-990c-0eec2415f3df/?reviews=true",
+						"headers": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"data": "{\"reviewer\": \"Taylor Bra\",\n\n\"review\": \"A hilarious flick!\",\n\n\n\"score\": 4}",
+						"method": "GET",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\"reviewer\": \"Taylor Bra\",\n\n\"review\": \"A hilarious flick!\",\n\n\n\"score\": 4}"
+		},
+		{
+			"id": "aa017082-2b2c-8280-3121-2a3ae9c205ac",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://drews122002-test.apigee.net/API_Homework5/movie/81cbc4d3-1d7a-11e7-990c-0eec2415f3df\n",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "9079d2bf-abbf-4263-0289-f2a29516cb3a",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://drews122002-test.apigee.net/API_Homework5/movie/81cbc4d3-1d7a-11e7-990c-0eec2415f3df\n",
+			"description": "Valid\trequest\twithout\tthe\treview\tquery\tparameter.",
+			"descriptionFormat": "html",
+			"time": 1492621036604,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 1466,
+					"headers": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "1543",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Apr 2017 16:56:07 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"607-dXDryuUfly6wxSYOYbDa67bwV0A\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "Server",
+							"value": "Apigee Router",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"movie\":{\"statusCode\":200,\"body\":{\"action\":\"get\",\"application\":\"d64dae4f-1bf2-11e7-a2c2-122e0737977d\",\"params\":{},\"path\":\"/movies\",\"uri\":\"https://apibaas-trial.apigee.net/drews122002/sandbox/movies\",\"entities\":[{\"uuid\":\"81cbc4d3-1d7a-11e7-990c-0eec2415f3df\",\"type\":\"movie\",\"name\":\"Dumb & Dumber\",\"created\":1491779765892,\"modified\":1491779766136,\"actors\":[{\"firstName\":\"Jim\",\"lastName\":\"Carrey\",\"age\":34},{\"firstName\":\"Jeff\",\"lastName\":\"Daniels\",\"age\":27},{\"firstName\":\"Lauren\",\"lastName\":\"Holly\",\"age\":26}],\"ID\":1,\"metadata\":{\"path\":\"/movies/81cbc4d3-1d7a-11e7-990c-0eec2415f3df\",\"size\":872},\"year\":1994}],\"timestamp\":1492620967132,\"duration\":38,\"organization\":\"drews122002\",\"applicationName\":\"sandbox\"},\"headers\":{\"access-control-allow-origin\":\"*\",\"content-type\":\"application/json\",\"date\":\"Wed, 19 Apr 2017 16:56:07 GMT\",\"server\":\"Apache-Coyote/1.1\",\"set-cookie\":[\"rememberMe=deleteMe; Path=/; Max-Age=0; Expires=Tue, 18-Apr-2017 16:56:07 GMT\"],\"content-length\":\"913\",\"connection\":\"keep-alive\"},\"request\":{\"uri\":{\"protocol\":\"https:\",\"slashes\":true,\"auth\":null,\"host\":\"apibaas-trial.apigee.net\",\"port\":443,\"hostname\":\"apibaas-trial.apigee.net\",\"hash\":null,\"search\":null,\"query\":null,\"pathname\":\"/drews122002/sandbox/movies/81cbc4d3-1d7a-11e7-990c-0eec2415f3df\",\"path\":\"/drews122002/sandbox/movies/81cbc4d3-1d7a-11e7-990c-0eec2415f3df\",\"href\":\"https://apibaas-trial.apigee.net/drews122002/sandbox/movies/81cbc4d3-1d7a-11e7-990c-0eec2415f3df\"},\"method\":\"GET\",\"headers\":{\"User-Agent\":\"usergrid-nodejs/v2.0.0-rc.2\",\"accept\":\"application/json\"}}}}",
+					"language": "json",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 1543,
+						"header": 270
+					},
+					"mimeType": "text",
+					"fileName": "response.json",
+					"dataURI": "data:application/json;base64, eyJtb3ZpZSI6eyJzdGF0dXNDb2RlIjoyMDAsImJvZHkiOnsiYWN0aW9uIjoiZ2V0IiwiYXBwbGljYXRpb24iOiJkNjRkYWU0Zi0xYmYyLTExZTctYTJjMi0xMjJlMDczNzk3N2QiLCJwYXJhbXMiOnt9LCJwYXRoIjoiL21vdmllcyIsInVyaSI6Imh0dHBzOi8vYXBpYmFhcy10cmlhbC5hcGlnZWUubmV0L2RyZXdzMTIyMDAyL3NhbmRib3gvbW92aWVzIiwiZW50aXRpZXMiOlt7InV1aWQiOiI4MWNiYzRkMy0xZDdhLTExZTctOTkwYy0wZWVjMjQxNWYzZGYiLCJ0eXBlIjoibW92aWUiLCJuYW1lIjoiRHVtYiAmIER1bWJlciIsImNyZWF0ZWQiOjE0OTE3Nzk3NjU4OTIsIm1vZGlmaWVkIjoxNDkxNzc5NzY2MTM2LCJhY3RvcnMiOlt7ImZpcnN0TmFtZSI6IkppbSIsImxhc3ROYW1lIjoiQ2FycmV5IiwiYWdlIjozNH0seyJmaXJzdE5hbWUiOiJKZWZmIiwibGFzdE5hbWUiOiJEYW5pZWxzIiwiYWdlIjoyN30seyJmaXJzdE5hbWUiOiJMYXVyZW4iLCJsYXN0TmFtZSI6IkhvbGx5IiwiYWdlIjoyNn1dLCJJRCI6MSwibWV0YWRhdGEiOnsicGF0aCI6Ii9tb3ZpZXMvODFjYmM0ZDMtMWQ3YS0xMWU3LTk5MGMtMGVlYzI0MTVmM2RmIiwic2l6ZSI6ODcyfSwieWVhciI6MTk5NH1dLCJ0aW1lc3RhbXAiOjE0OTI2MjA5NjcxMzIsImR1cmF0aW9uIjozOCwib3JnYW5pemF0aW9uIjoiZHJld3MxMjIwMDIiLCJhcHBsaWNhdGlvbk5hbWUiOiJzYW5kYm94In0sImhlYWRlcnMiOnsiYWNjZXNzLWNvbnRyb2wtYWxsb3ctb3JpZ2luIjoiKiIsImNvbnRlbnQtdHlwZSI6ImFwcGxpY2F0aW9uL2pzb24iLCJkYXRlIjoiV2VkLCAxOSBBcHIgMjAxNyAxNjo1NjowNyBHTVQiLCJzZXJ2ZXIiOiJBcGFjaGUtQ295b3RlLzEuMSIsInNldC1jb29raWUiOlsicmVtZW1iZXJNZT1kZWxldGVNZTsgUGF0aD0vOyBNYXgtQWdlPTA7IEV4cGlyZXM9VHVlLCAxOC1BcHItMjAxNyAxNjo1NjowNyBHTVQiXSwiY29udGVudC1sZW5ndGgiOiI5MTMiLCJjb25uZWN0aW9uIjoia2VlcC1hbGl2ZSJ9LCJyZXF1ZXN0Ijp7InVyaSI6eyJwcm90b2NvbCI6Imh0dHBzOiIsInNsYXNoZXMiOnRydWUsImF1dGgiOm51bGwsImhvc3QiOiJhcGliYWFzLXRyaWFsLmFwaWdlZS5uZXQiLCJwb3J0Ijo0NDMsImhvc3RuYW1lIjoiYXBpYmFhcy10cmlhbC5hcGlnZWUubmV0IiwiaGFzaCI6bnVsbCwic2VhcmNoIjpudWxsLCJxdWVyeSI6bnVsbCwicGF0aG5hbWUiOiIvZHJld3MxMjIwMDIvc2FuZGJveC9tb3ZpZXMvODFjYmM0ZDMtMWQ3YS0xMWU3LTk5MGMtMGVlYzI0MTVmM2RmIiwicGF0aCI6Ii9kcmV3czEyMjAwMi9zYW5kYm94L21vdmllcy84MWNiYzRkMy0xZDdhLTExZTctOTkwYy0wZWVjMjQxNWYzZGYiLCJocmVmIjoiaHR0cHM6Ly9hcGliYWFzLXRyaWFsLmFwaWdlZS5uZXQvZHJld3MxMjIwMDIvc2FuZGJveC9tb3ZpZXMvODFjYmM0ZDMtMWQ3YS0xMWU3LTk5MGMtMGVlYzI0MTVmM2RmIn0sIm1ldGhvZCI6IkdFVCIsImhlYWRlcnMiOnsiVXNlci1BZ2VudCI6InVzZXJncmlkLW5vZGVqcy92Mi4wLjAtcmMuMiIsImFjY2VwdCI6ImFwcGxpY2F0aW9uL2pzb24ifX19fQ==",
+					"state": {
+						"size": "normal"
+					},
+					"id": "1b3f18b3-427c-cade-13d8-f117d67c2717",
+					"name": "Valid\trequest\twithout\tthe\treview\tquery\tparameter.",
+					"request": {
+						"url": "http://drews122002-test.apigee.net/API_Homework5/movie/81cbc4d3-1d7a-11e7-990c-0eec2415f3df\n",
+						"headers": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"data": "",
+						"method": "GET",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": ""
+		},
+		{
+			"id": "c4aa214b-0e27-2c9a-bab6-a9f94a8bfa07",
+			"headers": "Content-Type: application/json\n",
+			"url": "http://drews122002-test.apigee.net/API_Homework5/movie/81cbc4d3-1d7a-11e7-90c-0eec2415f3df/",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "9079d2bf-abbf-4263-0289-f2a29516cb3a",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://drews122002-test.apigee.net/API_Homework5/movie/81cbc4d3-1d7a-11e7-90c-0eec2415f3df/",
+			"description": "Invalid\tsave\treview\t(movie\tmissing\tfrom\tDB)",
+			"descriptionFormat": "html",
+			"time": 1492622973132,
+			"version": 2,
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 318,
+					"headers": [
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*",
+							"name": "Access-Control-Allow-Origin",
+							"description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive",
+							"name": "Connection",
+							"description": "Options that are desired for the connection"
+						},
+						{
+							"key": "Content-Length",
+							"value": "253",
+							"name": "Content-Length",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"name": "Content-Type",
+							"description": "The mime type of this content"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 19 Apr 2017 17:29:19 GMT",
+							"name": "Date",
+							"description": "The date and time that the message was sent"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"fd-N/o7x3I1opYqWOvDQQJbhX365K8\"",
+							"name": "ETag",
+							"description": "An identifier for a specific version of a resource, often a message digest"
+						},
+						{
+							"key": "Server",
+							"value": "Apigee Router",
+							"name": "Server",
+							"description": "A name for the server"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express",
+							"name": "X-Powered-By",
+							"description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"message\":\"Cannot add review. Movie does not exist.\",\"error\":{\"name\":\"entity_not_found\",\"description\":\"Cannot find entity with name: 81cbc4d3-1d7a-11e7-90c-0eec2415f3df\",\"exception\":\"org.apache.usergrid.persistence.exceptions.EntityNotFoundException\"}}",
+					"language": "json",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"code": 200,
+					"responseSize": {
+						"body": 253,
+						"header": 268
+					},
+					"mimeType": "text",
+					"fileName": "response.json",
+					"dataURI": "data:application/json;base64, eyJtZXNzYWdlIjoiQ2Fubm90IGFkZCByZXZpZXcuIE1vdmllIGRvZXMgbm90IGV4aXN0LiIsImVycm9yIjp7Im5hbWUiOiJlbnRpdHlfbm90X2ZvdW5kIiwiZGVzY3JpcHRpb24iOiJDYW5ub3QgZmluZCBlbnRpdHkgd2l0aCBuYW1lOiA4MWNiYzRkMy0xZDdhLTExZTctOTBjLTBlZWMyNDE1ZjNkZiIsImV4Y2VwdGlvbiI6Im9yZy5hcGFjaGUudXNlcmdyaWQucGVyc2lzdGVuY2UuZXhjZXB0aW9ucy5FbnRpdHlOb3RGb3VuZEV4Y2VwdGlvbiJ9fQ==",
+					"state": {
+						"size": "normal"
+					},
+					"id": "1610cd20-be18-2278-5182-c80f523308e0",
+					"name": "Invalid\tsave\treview\t(movie\tmissing\tfrom\tDB)",
+					"request": {
+						"url": "http://drews122002-test.apigee.net/API_Homework5/movie/81cbc4d3-1d7a-11e7-90c-0eec2415f3df/",
+						"headers": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"enabled": true,
+								"description": "The mime type of this content",
+								"disabled": false
+							}
+						],
+						"data": "{\"reviewer\": \"Taylor Bra\",\n\n\"review\": \"A hilarious flick!\",\n\n\n\"score\": 4}",
+						"method": "POST",
+						"dataMode": "raw"
+					}
+				}
+			],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\"reviewer\": \"Taylor Bra\",\n\n\"review\": \"A hilarious flick!\",\n\n\n\"score\": 4}"
+		}
+	]
+}

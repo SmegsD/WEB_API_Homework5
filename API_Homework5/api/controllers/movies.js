@@ -33,7 +33,7 @@ module.exports = {
 function addReview (req,res){
     var review = req.swagger.params.review.value;
     _.assign(review, {type: 'review'});
-    Usergrid.GET("movies", req.swagger.params.id.value, function(error, usergridResponse, movie) {
+    Usergrid.GET("movies", req.swagger.params.movieId.value, function(error, usergridResponse, movie) {
         if (!error){
             var movietitle = movie.name;
             //give movie name to review, only if movie exists already
@@ -70,7 +70,7 @@ function addReview (req,res){
 }
 function getOne(req,res) {
 
-    var uuid = req.swagger.params.id.value;
+    var uuid = req.swagger.params.movieId.value;
     var reviews = req.swagger.params.reviews.value;
     Usergrid.GET("movies", uuid, function (error, usergridResponse, movie) {
         if (error) {
@@ -78,6 +78,7 @@ function getOne(req,res) {
         }
         else if (!reviews) {
             res.json({
+               // message: "reviews is false",
                 movie: usergridResponse
             }).end();
         }
@@ -89,6 +90,7 @@ function getOne(req,res) {
             };
             Usergrid.GET(options, function (error, usergridResponse2) {
                 res.json({
+                    //message: "reviews is true",
                     movie: usergridResponse,
                     reviews: usergridResponse2.entities
                 }).end();

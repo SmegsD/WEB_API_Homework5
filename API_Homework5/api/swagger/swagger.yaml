@@ -78,8 +78,13 @@ paths:
     x-swagger-router-controller: movies
     get:
       description: Returns a single movie entry
-      operationId: returnMovie
+      operationId: getOne
       parameters:
+        - name: reviews
+          required: false
+          in: query
+          type: boolean
+          default: false
         - name: movieId
           required: true
           in: path
