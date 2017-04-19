@@ -55,7 +55,25 @@ paths:
           description: error
           schema:
             $ref: "#/definitions/ErrorResponse"
-
+  /reviews/{id}:
+    x-swagger-router-controller: movies
+    delete:
+      description: Delete a movie from the database.
+      operationId: deleteReview
+      parameters:
+        - name: id
+          required: true
+          in: path
+          type: string
+      responses:
+        "200":
+          description: Removes a review.
+          schema:
+            $ref: "#/definitions/Review"
+        default:
+          description: error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
   /movie/{movieId}:
     x-swagger-router-controller: movies
     get:
@@ -115,20 +133,66 @@ paths:
           description: error
           schema:
             $ref: "#/definitions/ErrorResponse"
-
+    post:
+      description: Add a review to a movie with given ID
+      operationId: addReview
+      parameters:
+        - name: movieId
+          required: true
+          in: path
+          type: string
+        - name: review
+          required: true
+          in: body
+          description: A review to add to the database
+          schema:
+            $ref: "#/definitions/Review"
+      responses:
+        "200":
+          description: Movie review post was successful.
+          schema:
+            $ref: "#/definitions/MovieBody"
+        default:
+          description: error
+          schema:
+            $ref: "#/definitions/ErrorResponse"
   /swagger:
     x-swagger-pipe: swagger_raw
 # complex objects have schema definitions
 definitions:
 
-#responding with a list of movies
+
+
+#Review Object
+  Review:
+    required:
+      - review
+      - score
+      - reviewer
+    properties:
+      reviewer:
+        type: string
+      movie:
+        type: string
+      review:
+        type: string
+      score:
+        type: integer
+        minimum: 1
+        maximum: 5
+        default: 3
+  ReviewList:
+    properties:
+      Review:
+        type: array
+        items:
+          $ref: "#/definitions/Review"
   MovieList:
     properties:
       movie:
         type: array
         items:
           $ref: "#/definitions/Movie"
-
 #Post/Put/Delete a Movie
   MovieBody:
     properties:

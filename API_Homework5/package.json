@@ -9,10 +9,11 @@
   "main": "app.js",
   "dependencies": {
     "apigee-access": "1.4.0",
-    "express": "^4.12.3",
+    "express": "4.15.2",
     "github": "9.2.0",
     "lodash": "4.17.4",
-    "swagger-express-mw": "^0.1.0",
+    "swagger-express": "1.0.5",
+    "swagger-express-mw": "0.1.0",
     "usergrid": "2.0.0-rc.2"
   },
   "devDependencies": {
